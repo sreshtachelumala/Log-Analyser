@@ -10,7 +10,23 @@ This project is a simple log analysis tool built using Python and pandas. It rea
 
 ### How to Use
 
-You don’t need to provide a CSV file with the project. Simply ensure that you have your own CSV file with the required columns, and the script will work with your log data.
+1. **Prepare a CSV File**: 
+   You will need a CSV file containing logs with the following columns:
+   ```
+   "Message", "Id", "Version", "Qualifiers", "Level", "Task", "Opcode", 
+   "Keywords", "RecordId", "ProviderName", "ProviderId", "LogName", 
+   "ProcessId", "ThreadId", "MachineName", "UserId", "TimeCreated", 
+   "ActivityId", "RelatedActivityId", "ContainerLog", "MatchedQueryIds", 
+   "Bookmark", "LevelDisplayName", "OpcodeDisplayName", "TaskDisplayName", 
+   "KeywordsDisplayNames", "Properties"
+   ```
+
+   **Note**: You are responsible for providing the CSV file. The script does not include a sample file but is designed to work with log data structured as shown above.
+
+2. **Run the Script**: Update the path to your CSV file in the script and execute it. The tool will:
+   - Count the logs based on their severity level.
+   - Filter logs within the time range specified in the code.
+   - Display the first `n` logs for quick inspection.
 
 ## Requirements
 - Python 3.x
