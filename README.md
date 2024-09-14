@@ -8,6 +8,10 @@ This project is a simple log analysis tool built using Python and pandas. It rea
 - **Filter Logs by Time Range**: Specify a start and end time to retrieve logs within that period.
 - **Display Logs**: Display the first `n` log entries for quick viewing.
 
+### How to Use
+
+You don’t need to provide a CSV file with the project. Simply ensure that you have your own CSV file with the required columns, and the script will work with your log data.
+
 ## Requirements
 - Python 3.x
 - pandas
